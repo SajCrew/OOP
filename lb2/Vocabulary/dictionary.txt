@@ -1,0 +1,10 @@
+&&123
+*&fd
+apple&яблоко
+cat&кот, кошка
+dog&собака
+hello&привет
+house&дом
+red&красный
+river&река
+the red square&Красная Площадь

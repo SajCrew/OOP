@@ -1,0 +1,8 @@
+apple&яблоко
+cat&кот
+dog&собака
+hello&привет
+house&дом
+red&красный
+river&река
+the red square&Красная Площадь
