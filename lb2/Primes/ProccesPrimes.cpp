@@ -1,7 +1,6 @@
 #include <vector>
 #include <cmath>
 #include "Utils.h"
-//название файла без _
 
 const int MIN_PRIME = 2;
 
@@ -11,8 +10,6 @@ void SetPrimeElem(int prime, const int upperbound, std::vector<bool>& isPrime)
         isPrime[multiple] = false;
     }
 }
-//упростить алгоритм решета Эратосфена
-// добавить тесты на макс и мин входные значения
 std::vector<bool>FindPrimeNumbers(const int upperbound) //array => upperbound
 {
     std::vector<bool> isPrime(upperbound + 1, true);
@@ -22,8 +19,6 @@ std::vector<bool>FindPrimeNumbers(const int upperbound) //array => upperbound
             isPrime[even] = false;
         }
     }
-
-    // Просеиваем только по нечётным числам
     for (int num = 3; num * num <= upperbound; num += 2) {
         if (isPrime[num]) {
             SetPrimeElem(num, upperbound, isPrime);
@@ -34,7 +29,6 @@ std::vector<bool>FindPrimeNumbers(const int upperbound) //array => upperbound
 
 std::set<int>ToPrimes(int array, std::set<int>& primes, std::vector<bool>& isPrime)
 {
-    //2 - в конст
     for (int arrElem = MIN_PRIME; arrElem <= array; ++arrElem)
     {
         if (isPrime[arrElem])
